@@ -5,7 +5,7 @@ provider "aws" {
 # Customized with your own s3 bucket and dynamoDB table if you want to use Remote Backend for State
 terraform {
   backend "s3" {
-    bucket         = "terraform-tfstate-playingaws-poc"     # Update it 
+    bucket         = "terraform-tfstate-poc"     # Update it 
     key            = "poc/terraform-github-actions.tfstate" # Update it
     region         = "eu-west-1"                            # Update it
     dynamodb_table = "terraform-lock"                       # Update it
