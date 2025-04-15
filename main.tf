@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 # Customized with your own s3 bucket and dynamoDB table if you want to use Remote Backend for State
-terraform {
+/*terraform {
   backend "s3" {
     bucket         = "terraform-tfstate-poc"     # Update it 
     key            = "poc/terraform-github-actions.tfstate" # Update it
@@ -11,7 +11,7 @@ terraform {
     dynamodb_table = "terraform-lock"                       # Update it
     encrypt        = true
   }
-}
+}*/
 
 resource "aws_budgets_budget" "zero_spend_budget" {
   name         = "ZeroSpendBudget"
