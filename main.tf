@@ -2,7 +2,7 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-# Customize with your own s3 bucket and dynamoDB table if you want to use Remote Backend for State
+# Customized with your own s3 bucket and dynamoDB table if you want to use Remote Backend for State
 terraform {
   backend "s3" {
     bucket         = "terraform-tfstate-playingaws-poc"     # Update it 
